@@ -7,7 +7,35 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <h1>
+      <a
+        href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch#project-solution"
+        >The Odin Project: Etch A Sketch</a
+      >
+    </h1>
+    <!-- Creation of the grids-->
     <div class="grid-container"></div>
+
+    <!-- Users Inputs -->
+    <div class="user-inputs">
+      <p>
+        Choose a color: <input type="color" id="colorPicker" value="#ADD8E6" />
+      </p>
+      <button id="rainbowBtn">Rainbow Mode</button>
+
+      <div class="user-new-grid">
+        <button id="newGridBtn">Create New Grid</button>
+        <label>
+          Columns:
+          <input type="number" id="colsInput" min="1" max="100" value="10" />
+        </label>
+        <label>
+          Rows:
+          <input type="number" id="rowsInput" min="1" max="100" value="10" />
+        </label>
+      </div>
+    </div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
